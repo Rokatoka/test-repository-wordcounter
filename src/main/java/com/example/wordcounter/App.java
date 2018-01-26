@@ -5,7 +5,8 @@ public class App
     public static void main( String[] args )
     {
         System.out.println("Word Count Testing App!");
-        System.out.println(wordcount("Hello world"));
+        System.out.println(wordcount("Hello world"));//method counts amount of words of string
+        
     }
     
     public static int wordcount(String s) {
