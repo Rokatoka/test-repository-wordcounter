@@ -5,9 +5,25 @@ public class App
     public static void main( String[] args )
     {
         System.out.println("Word Count Testing App!");
+        System.out.println(wordcount("Hello world"));
     }
     
     public static int wordcount(String s) {
-        return 0;
+    	int count = 0;
+    	String a = s;
+    	char b[] = a.toCharArray();
+    	int endLine = s.length() -1;
+    	for (int i = 0; i<s.length(); i++) {
+    		if (b[i] == 0) {
+    			break;
+    		}
+    		else if (b[i] == ' ' || i == endLine) {
+    			count++;
+    		} else {
+    			continue;
+    		}
+    	}
+    	
+    	return count;
     }
 }
